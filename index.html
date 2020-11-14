@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" type="module"></script>
+</head>
+<body>
+<div class="main">
+    <div id="board"></div>
+    <div class="messages">
+        <div class="game_options">
+            <label for="player1">黒
+                <select name="player1" id="player1">
+                    <option value="player" selected>自分</option>
+                    <option value="com1">COM1</option>
+                    <option value="com2">COM2</option>
+                    <option value="com3">COM3</option>
+                    <option value="com4">COM4</option>
+                    <option value="com5">COM5</option>
+                </select></label>
+            <label for="player2">白
+                <select name="player2" id="player2">
+                    <option value="player">自分</option>
+                    <option value="com1">COM1</option>
+                    <option value="com2">COM2</option>
+                    <option value="com3">COM3</option>
+                    <option value="com4">COM4</option>
+                    <option value="com5" selected>COM5</option>
+                </select></label>
+            <label>サイズ
+                <input type="number" name="board_size" id="board_size" min="4" value="8">
+            </label>
+            <button id="start_game">開始</button>
+        </div>
+        <!--suppress HtmlFormInputWithoutLabel -->
+        <textarea name="messages" id="message_area" cols="40" rows="25" disabled>COM1: ランダムに置く&NewLine;COM2: ちょっといい感じに置く&NewLine;COM3: 角を取ろうとする&NewLine;COM4: パスさせようとする&NewLine;COM5: いい感じに置く</textarea>
+        <p id="message"></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.main {
+    margin: auto;
+    text-align: center;
+}
+
+#board, .messages {
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.column {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    background-color: green;
+}
+
+.column:hover {
+    opacity: 0.6;
+}
+
+.stone {
+    font-size: 64px;
+    position: relative;
+    top: -21px;
+    left: -6px;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.game_options {
+    margin-bottom: 5px;
+}
+
+#board_size {
+    width: 30px;
+}
